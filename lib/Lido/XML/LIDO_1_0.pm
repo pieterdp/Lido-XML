@@ -1,4 +1,7 @@
 package Lido::XML::LIDO_1_0;
+
+our $VERSION = '0.01';
+
 use Moo;
 use Lido::XML::LIDO_1_0::basicTypes;
 use Lido::XML::LIDO_1_0::coordinateOperations;

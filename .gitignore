@@ -1,0 +1,15 @@
+!.gitignore
+.DS_Store
+*.swp
+.build
+_build
+blib
+Build
+LICENSE
+Makefile.PL
+META.*
+MYMETA.*
+Lido-XML-*
+local
+.perl-version
+cpanfile.snapshot

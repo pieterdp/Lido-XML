@@ -25,6 +25,8 @@ package Lido::XML::$name\::$package;
 
 use Moo;
 
+our \$VERSION = '0.01';
+
 sub content {
 	my \@lines = <DATA>;
 	join '' , \@lines;
@@ -39,6 +41,9 @@ EOF
 
 my $perl =<<EOF;
 package Lido::XML::$name;
+
+our \$VERSION = '0.01';
+
 use Moo;
 EOF
 

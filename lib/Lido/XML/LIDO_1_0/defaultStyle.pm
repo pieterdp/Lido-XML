@@ -2,6 +2,8 @@ package Lido::XML::LIDO_1_0::defaultStyle;
 
 use Moo;
 
+our $VERSION = '0.01';
+
 sub content {
 	my @lines = <DATA>;
 	join '' , @lines;
