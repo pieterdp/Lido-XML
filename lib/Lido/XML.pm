@@ -1,6 +1,6 @@
 package Lido::XML;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Moo;
 use Lido::XML::LIDO_1_0;
