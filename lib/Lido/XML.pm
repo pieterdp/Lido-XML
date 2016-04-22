@@ -66,7 +66,7 @@ Lido::XML - A Lido XML parser and writer
 
     my $lido = Lido::XML->new;
 
-    my $perl = $lido->parser($xml_file);
+    my $perl = $lido->parse($xml_file);
 
     my $xml  = $lido->to_xml($perl);
 
