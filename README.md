@@ -23,7 +23,7 @@ parse the content of Lido XML files into a Perl hash and back.
     * I'm not a LIDO expert.
     * This project was created as part of the L<Catmandu> project as an example how to create a XML parser based on a known XSD Schema.
     * All the heavy work is done by the excellent L<XML::Compile> package.
-    * I invite others developers to contribute to this code.
+    * I invite other developers to contribute to this code.
 
 # CONFIGURATION
 
