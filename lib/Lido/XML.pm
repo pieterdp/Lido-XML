@@ -113,9 +113,13 @@ Patrick Hochstenbach, C<< patrick.hochstenbach at ugent.be >>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2016 by Patrick Hochstenbach.
+The Perl software is copyright (c) 2016 by Patrick Hochstenbach.
 
 This is free software; you can redistribute it and/or modify it under the same terms as the Perl 5 programming language system itself.
+
+All included LIDO schemas carry an Open Geospacial Group OGC license:
+
+Copyright (c) 2016 Open Geospatial Consortium, Inc. All Rights Reserved L<http://www.opengeospatial.org/ogc/Document>.
 
 =encoding utf8
 
