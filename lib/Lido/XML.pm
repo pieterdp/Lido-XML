@@ -10,6 +10,15 @@ use XML::Compile::Util 'pack_type';
 
 has 'namespace' => (is => 'ro' , default => sub {'http://www.lido-schema.org'});
 has 'root'      => (is => 'ro' , default => sub {'lido'});
+has 'prefixes'  => (is => 'ro' , default => sub {
+                      [
+                        'lido' => 'http://www.lido-schema.org',
+                        'doc' => 'http://www.mda.org.uk/spectrumXML/Documentation',
+                        'gml' => 'http://www.opengis.net/gml',
+                        'xsd' => 'http://www.w3.org/2001/XMLSchema',
+                        'xml' => 'http://www.w3.org/XML/1998/namespace'
+                      ]
+                    });
 has 'schema'    => (is => 'lazy');
 has 'reader'    => (is => 'lazy');
 has 'writer'    => (is => 'lazy');
@@ -36,7 +45,7 @@ sub _build_reader {
 sub _build_writer {
 	my $self = shift;
 	my $type      = pack_type $self->namespace, $self->root;
-	$self->schema->compile(WRITER => $type);
+	$self->schema->compile(WRITER => $type, ( prefixes => $self->prefixes ) );
 }
 
 sub parse {
@@ -95,7 +104,7 @@ Create a new Lido processor
 
 =head1 METHODS
 
-=over 
+=over
 
 =item parse( $file | $string )
 
