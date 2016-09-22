@@ -120,6 +120,10 @@ Transform a Perl hash back into a Lido XML record
 
 Patrick Hochstenbach, C<< patrick.hochstenbach at ugent.be >>
 
+=head1 CONTRIBUTORS
+
+Matthias Vandermaesen
+
 =head1 COPYRIGHT AND LICENSE
 
 The Perl software is copyright (c) 2016 by Patrick Hochstenbach.

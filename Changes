@@ -1,6 +1,7 @@
 Revision history for Catmandu
 
 {{$NEXT}}
+  - adding prefixes option when creating a Lido parser
 
 0.04  2016-04-23 16:36:58 CEST
   - missed dependency version
@@ -8,10 +9,9 @@ Revision history for Catmandu
 0.03  2016-04-23 12:51:44 CEST
   - typo in pod
   - adding missing test dependencies
-  
+
 0.02  2016-04-22 11:25:24 CEST
   - adding pod
 
 0.01    2016-04-22
   - initial release
-
