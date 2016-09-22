@@ -45,6 +45,10 @@ parse the content of Lido XML files into a Perl hash and back.
 
 Patrick Hochstenbach, `patrick.hochstenbach at ugent.be`
 
+# CONTRIBUTORS
+
+Matthias Vandermaesen
+
 # COPYRIGHT AND LICENSE
 
 The Perl software is copyright (c) 2016 by Patrick Hochstenbach.

@@ -2,7 +2,7 @@ package Lido::XML::LIDO_1_0::geometryBasic0d1d;
 
 use Moo;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 sub content {
 	my @lines = <DATA>;
