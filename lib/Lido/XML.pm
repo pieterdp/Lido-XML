@@ -4,9 +4,12 @@ our $VERSION = '0.05';
 
 use Moo;
 use Lido::XML::LIDO_1_0;
+use Lido::XML::Error;
 use XML::Compile;
 use XML::Compile::Schema;
 use XML::Compile::Util 'pack_type';
+use Try::Tiny;
+
 
 has 'namespace' => (is => 'ro' , default => sub {'http://www.lido-schema.org'});
 has 'root'      => (is => 'ro' , default => sub {'lido'});
@@ -56,7 +59,12 @@ sub parse {
 sub to_xml {
 	my ($self,$data) = @_;
 	my $doc    = XML::LibXML::Document->new('1.0', 'UTF-8');
-	my $xml    = $self->writer->($doc, $data);
+	my $xml;
+	try {
+		$xml    = $self->writer->($doc, $data);
+	} catch {
+		Lido::XML::Error->throw(sprintf('%s', $_));
+	};
 	$doc->setDocumentElement($xml);
 	$doc->toString(1);
 }
